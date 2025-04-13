@@ -30,7 +30,7 @@ def reverse_complement(sequence):
         return "Invalid characters in sequence."
 
 # ---------------- Streamlit App ----------------
-st.set_page_config(page_title="DNA Sequence Analyzer", layout="centered")
+st.set_page_config(page_title="DNA Sequence Analyzer tool", layout="centered")
 st.title("🧬 DNA Sequence Analyzer")
 
 with st.expander("ℹ️ Input Criteria", expanded=False):
@@ -41,7 +41,7 @@ with st.expander("ℹ️ Input Criteria", expanded=False):
     """)
 
 # Input and Button
-sequence = st.text_area("Enter a DNA sequence:", height=150).upper()
+sequence = st.text_area("Enter a DNA sequence:", height=200).upper()
 analyze_button = st.button("🔍 Analyze")
 
 # Process only when button is clicked
